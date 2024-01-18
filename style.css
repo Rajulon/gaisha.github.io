@@ -1,0 +1,148 @@
+.navbar {
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.59);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+}
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    z-index: -999;
+    background-color: rgb(207, 0, 190);
+    background: linear-gradient(180deg, rgb(207, 0, 190), rgb(252, 3, 106));
+}
+
+
+.page img {
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.page h1 {
+    text-transform: uppercase;
+}
+
+
+.blok {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(207, 0, 190);
+    background: linear-gradient(180deg, rgb(207, 0, 190), rgb(252, 3, 106));
+
+}
+
+.profil {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 60vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to top, rgb(133, 0, 115), #ff02c8);
+}
+
+
+.title h3 {
+    margin-left: 20px;
+    font-family: 'Sacramento', cursive;
+    color: #fefefe;
+    text-decoration: underline;
+}
+
+
+.image img {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translateY(-30%);
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 10px;
+    line-height: 1;
+    color: #fefefe;
+}
+
+button a {
+    color: #000;
+    text-decoration: none;
+}
+
+.profil button {
+    border-radius: 20px;
+    border: none;
+    padding: 8px;
+    background-color: #ff02c8;
+    background: linear-gradient(90deg, rgb(133, 0, 115), #ff02c8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.wrapper {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+
+.wrapper h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+}
+
+ol {
+    font-weight: 600;
+}
+
+ol p {
+    font-weight: 400;
+}
+
+.wrapper ul li {
+    font-weight: 400;
+    list-style-type: disc;
+}
+
+@media only screen and (max-width: 600px) {
+    .page {
+        width: 100%;
+    }
+}
